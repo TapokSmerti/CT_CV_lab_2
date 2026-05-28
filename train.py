@@ -24,11 +24,10 @@ def main():
     model.train(
         data      = DATA,
         epochs    = 80,
-        imgsz     = 640,
-        batch     = 16,
-        device    = DEVICE,
-        workers   = 8,
-
+        imgsz     = 416,
+        batch     = 32, 
+        device    = DEVICE, 
+        workers   = 12, 
         project   = PROJECT,
         name      = NAME,
 
