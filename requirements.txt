@@ -1,0 +1,13 @@
+ultralytics
+torch
+torchvision
+opencv-python
+matplotlib
+numpy
+tqdm
+pandas
+scipy
+h5py
+requests
+pyyaml
+roboflow
