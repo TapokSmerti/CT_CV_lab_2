@@ -1,0 +1,31 @@
+# Объединённый датасет: NumberDetection + SVHN
+# Оба датасета nc=10, классы 0-9 — полностью совместимы.
+#
+# Пути абсолютные от корня проекта (где лежит train.py).
+# Ultralytics принимает список путей в train/val/test.
+#
+# Перед запуском убедись что SVHN сконвертирован:
+#   python convert_svhn.py --svhn_root datasets/svhn --output_root datasets/svhn_yolo
+
+train:
+  - datasets/number_detection/train/images
+  - datasets/svhn_yolo/train/images
+
+val:
+  - datasets/number_detection/valid/images
+
+test:
+  - datasets/svhn_yolo/test/images        # метрики считаем только на SVHN test
+
+nc: 10
+names:
+  0: "0"
+  1: "1"
+  2: "2"
+  3: "3"
+  4: "4"
+  5: "5"
+  6: "6"
+  7: "7"
+  8: "8"
+  9: "9"
