@@ -1,3 +1,2 @@
-git lfs track "*.pt"
-git lfs track "*.pth"
 *.pt filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
