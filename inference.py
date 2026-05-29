@@ -3,7 +3,7 @@ from pathlib import Path
 import cv2
 
 
-MODEL_PATH = "runs/number_detector/weights/best.pt"
+MODEL_PATH = "runs/detect/runs/digit_detector-4/weights/best.pt"
 SOURCE_DIR = "photos"
 OUTPUT_DIR = "results"
 
